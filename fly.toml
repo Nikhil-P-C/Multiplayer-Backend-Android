@@ -1,0 +1,7 @@
+app = "multiplayer-backend-android"
+primary_region = "bom"  # Mumbai
+
+[[services]]
+protocol = "udp"
+internal_port = 7777
+ports = [{ port = 7777 }]
