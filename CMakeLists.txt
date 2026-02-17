@@ -7,8 +7,9 @@ add_subdirectory(vendor/enet)
 
 add_executable(server server.cpp)
 
-target_include_directories(server
-    PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include
+target_include_directories(server PRIVATE
+    ${CMAKE_CURRENT_SOURCE_DIR}/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/vendor/enet/include
 )
 
 target_link_libraries(server PRIVATE enet)
