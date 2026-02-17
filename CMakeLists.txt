@@ -3,7 +3,7 @@ project(AndroidGameServer)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_subdirectory(vendor/enet-1.3.18)
+add_subdirectory(vendor/enet)
 
 add_executable(server server.cpp)
 
